@@ -1,0 +1,12 @@
+
+<h1 class="margin">Click To See Answers</h1>
+<div class="display-flex-row display-centre">
+    <mat-card (click)="navigateToStackoverFlow(item.link)" *ngFor="let item of currentItemsToShow" class="gap grow pointer">
+        {{item.title}}
+    </mat-card>
+    <mat-paginator [length]="length"
+               [pageSize]="pageSize"
+               [pageSizeOptions]="pageSizeOptions"
+               (page)="onPageChange($event)">
+</mat-paginator>
+</div>

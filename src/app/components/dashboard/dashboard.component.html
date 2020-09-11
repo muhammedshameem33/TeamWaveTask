@@ -1,14 +1,12 @@
 <div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
     <mat-toolbar style="background: maroon;" class="example-toolbar">
-        <!-- <h1></h1> -->
         <mat-card class="search-container">
-            <!-- <mat-icon class="search-icon" matSuffix>search</mat-icon>
-            <input class="search-box" type="text" (input)="onSearchChange($event.target.value)" name="search" autocomplete="off" placeholder="Search"> -->
         </mat-card>
+        <h1>Team Wave Assignment 1</h1>
     </mat-toolbar>
     <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
         <mat-sidenav-content>
-            <!-- <app-posts ></app-posts> -->
+            <app-search></app-search>
         </mat-sidenav-content>
     </mat-sidenav-container>
 </div>
